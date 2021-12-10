@@ -1,0 +1,427 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+div.body {
+  position: relative;
+  background-color: #2c2c2c;
+  color: white;
+}
+
+.blue {
+  color: #00fff0;
+  font-size: 2rem;
+}
+
+.smallblue {
+  color: #00fff0;
+  font-size: 1.5rem;
+}
+
+.active {
+  color: #00fff0;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+}
+
+header nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #adadad;
+}
+
+header nav h1 {
+  font-size: 1.8rem;
+  color: aqua;
+  padding: 0.5rem;
+}
+
+header nav ul {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul li {
+  font-size: 1.2rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+div.body main section.up {
+  position: relative;
+}
+
+div.body main section.up img {
+  z-index: -1;
+  width: 100%;
+}
+
+div.body main section.up h1.one {
+  position: absolute;
+  bottom: 55vh;
+  left: 12vw;
+  font-size: 2rem;
+}
+
+div.body main section.up h1.two {
+  position: absolute;
+  bottom: 68vh;
+  right: 12vw;
+  font-size: 2rem;
+}
+
+div.body main section.up a {
+  position: absolute;
+  bottom: 20vh;
+  right: 15vw;
+  font-size: 2rem;
+  text-decoration: none;
+  background-color: #c4c4c4;
+  color: black;
+  border-radius: 10%;
+  padding: 1rem 1.1rem;
+}
+
+div.body main section.down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 5rem;
+  padding-top: 3rem;
+}
+
+div.body main section.down div.left {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 500px;
+          flex: 3 1 500px;
+}
+
+div.body main section.down div.left h1 {
+  padding-left: 3rem;
+}
+
+div.body main section.down div.left p {
+  padding: 2rem 3rem;
+}
+
+div.body main section.down div.right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 200px;
+          flex: 1 1 200px;
+}
+
+div.body main section.down div.right img {
+  border-radius: 50%;
+  width: 20vw;
+  height: 43vh;
+  margin-top: 3rem;
+}
+
+div.body main section.resume {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+div.body main section.resume section.table {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 500px;
+          flex: 3 1 500px;
+  padding: 2rem;
+}
+
+div.body main section.resume section.table table {
+  border-collapse: collapse;
+}
+
+div.body main section.resume section.table table tr {
+  border-bottom: 2px solid white;
+}
+
+div.body main section.resume section.table table tr td {
+  padding: 1rem;
+}
+
+div.body main section.resume section.table table tr td ol li {
+  padding: 0.5rem;
+}
+
+div.body main section.resume section.table table tr td ul li {
+  padding: 0.5rem;
+}
+
+div.body main section.resume section.table table tr:hover {
+  background-color: #015e57;
+}
+
+div.body main section.resume section.picture {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 200px;
+          flex: 1 1 200px;
+}
+
+div.body main section.resume section.picture img {
+  border-radius: 40%;
+  width: 20vw;
+  height: 55vh;
+  margin-left: 2rem;
+}
+
+div.body main section.works {
+  padding: 2rem;
+}
+
+div.body main section.works h1 {
+  border-bottom: 2px solid #00fff0;
+}
+
+div.body main section.works ol li.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+div.body main section.works ol li.list ul {
+  list-style-type: none;
+  width: 70%;
+}
+
+div.body main section.works ol li.list ul li {
+  margin-top: 0.8rem;
+}
+
+div.body main section.works ol li.list ul li a {
+  color: #0083fd;
+}
+
+div.body main section.works ol li.list img {
+  width: 12vw;
+  height: 25vh;
+  margin: 1rem 2rem 2rem 2rem;
+}
+
+div.body main section.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 3rem;
+}
+
+div.body main section.contact section.contactWord {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+div.body main section.contact div.line {
+  width: 4px;
+  background-color: #00fff0;
+}
+
+div.body main section.contact section.form {
+  margin-left: 3rem;
+}
+
+div.body main section.contact section.form div.form2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70vh;
+}
+
+div.body main section.contact section.form div.form2 div {
+  font-size: 1.2rem;
+}
+
+div.body main section.contact section.form div.form2 div input,
+div.body main section.contact section.form div.form2 div textarea {
+  width: 30vw;
+  margin: 1rem 1.5rem;
+  background-color: #c4c4c4;
+}
+
+div.body main section.contact section.form div.form2 div textarea {
+  vertical-align: top;
+}
+
+div.body main section.contact section.form div.form2 button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 8rem;
+  background-color: #00fff0;
+  font-size: 1.2rem;
+  padding: 0.5rem 0rem;
+  border-radius: 10px;
+}
+
+div.body footer {
+  padding-left: 4rem;
+  padding-bottom: 3rem;
+}
+
+div.body footer a {
+  margin: 2rem;
+}
+
+.error {
+  background-color: #ff9a9a;
+  color: red;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 850px) {
+  div.body header nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  div.body header nav ul {
+    width: 100%;
+  }
+  div.body header nav ul li {
+    padding: 0.5rem 1rem;
+  }
+  div.body main section.up img {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  div.body main section.up h1.one {
+    font-size: 1.2rem;
+    bottom: 8vh;
+    left: 5vw;
+  }
+  div.body main section.up h1.two {
+    font-size: 1.2rem;
+    bottom: 15vh;
+    right: 5vw;
+  }
+  div.body main section.up a {
+    font-size: 0.5rem;
+    bottom: 2vh;
+    right: 8vw;
+    padding: 0.5rem 0.6rem;
+  }
+  div.body main section.down {
+    padding-bottom: 0rem;
+  }
+  div.body main section.down div.right img {
+    width: 60vw;
+    height: 30vh;
+    margin-left: 3rem;
+  }
+  div.body main section.resume section.picture img {
+    width: 80vw;
+    height: 45vh;
+    margin-left: 2rem;
+  }
+  div.body main section.works ol li.list img {
+    width: 40vw;
+    height: 20vh;
+    margin: 1rem 2rem 2rem 2rem;
+  }
+  div.body main section.works ol li.list ul {
+    width: 100%;
+  }
+  div.body main section.works ol li.list ul li a {
+    visibility: hidden;
+    display: block;
+    font-size: 0px;
+  }
+  div.body main section.works ol li.list ul li a:after {
+    content: "點這裡";
+    visibility: visible;
+    display: block;
+    font-size: 20px;
+  }
+  div.body main section.contact div.line {
+    width: 100vw;
+    height: 2px;
+    background-color: #00fff0;
+    margin-top: 2rem;
+  }
+  div.body main section.contact section.form {
+    margin-left: 3rem;
+  }
+  div.body main section.contact section.form div.form2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 70vh;
+    margin: 2rem 0rem;
+  }
+  div.body main section.contact section.form div.form2 div {
+    font-size: 1.2rem;
+  }
+  div.body main section.contact section.form div.form2 div input,
+  div.body main section.contact section.form div.form2 div textarea {
+    width: 80vw;
+    margin: 1rem 1.5rem;
+  }
+  div.body footer {
+    padding-left: 1rem;
+    margin-top: 15rem;
+  }
+  div.body footer a {
+    margin: 1rem;
+  }
+  div.body footer a img {
+    width: 20vw;
+    height: 10vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */
